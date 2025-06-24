@@ -42,21 +42,21 @@ while running:
                 is_flying = False
 
             elif is_flying:
-                if key == pygame.K_UP:
+                if key == pygame.K_w:
                     tello.move_forward(SPEED)
-                elif key == pygame.K_DOWN:
-                    tello.move_back(SPEED)
-                elif key == pygame.K_LEFT:
-                    tello.move_left(SPEED)
-                elif key == pygame.K_RIGHT:
-                    tello.move_right(SPEED)
-                elif key == pygame.K_w:
-                    tello.move_up(SPEED)
                 elif key == pygame.K_s:
-                    tello.move_down(SPEED)
+                    tello.move_back(SPEED)
                 elif key == pygame.K_a:
-                    tello.rotate_counter_clockwise(45)
+                    tello.move_left(SPEED)
                 elif key == pygame.K_d:
+                    tello.move_right(SPEED)
+                elif key == pygame.K_u:
+                    tello.move_up(SPEED)
+                elif key == pygame.K_j:
+                    tello.move_down(SPEED)
+                elif key == pygame.K_q:
+                    tello.rotate_counter_clockwise(45)
+                elif key == pygame.K_e:
                     tello.rotate_clockwise(45)
 
 pygame.quit()
