@@ -13,7 +13,7 @@ time.sleep(2)
 
 # Fly in a square
 for _ in range(4):
-    tello.move_forward(100)
+    tello.move_forward(50)
     tello.rotate_clockwise(90)
     time.sleep(1)
 
